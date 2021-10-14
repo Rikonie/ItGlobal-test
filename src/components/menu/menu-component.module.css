@@ -1,0 +1,127 @@
+
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E5E5E5;
+    z-index: 4444;
+}
+
+.header {
+    display: flex;
+    position: static;
+}
+
+.text {
+    color: #151617;
+    font-family: 'Golos Text';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.languageBox {
+    display: flex;
+    position: static;
+    padding: 10px 5.65px 77px 11px;
+}
+
+.iconBoxLanguage {
+    display: flex;
+    position: static;
+    padding: 17px 11px 84px 23px;
+    border-radius: 10px;
+}
+
+.iconLanguage {
+    border-radius: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.closeMenuBox {
+    display: flex;
+    float: right;
+    padding: 15.47px 15.47px
+}
+
+.closeMenuIcon {
+    width: 19.06px;
+    height: 19.06px;
+}
+
+.arrowToDownBox {
+    display: flex;
+    position: static;
+    padding: 22.65px 227.12px 89.29px 5.65px;
+}
+
+.arrowToDownIcon {
+    width: 12.71px;
+    height: 7.06px;
+}
+
+.arrowToRightIcon {
+    width: 7.06px;
+    height: 12.71px;
+}
+
+.servicesBox {
+    display: flex;
+    position: static;
+    width: 292px;
+    height: 32px;
+    padding: 77px 38px 20px 30px;
+}
+
+.managerBox {
+    display: flex;
+    position: static;
+    width: 292px;
+    height: 32px;
+    padding: 0 38px 20px 30px;
+}
+
+.telecomBox {
+    display: flex;
+    position: static;
+    width: 292px;
+    height: 32px;
+    padding: 20px 38px 20px 30px;
+}
+
+.aboutUsBox {
+    display: flex;
+    position: static;
+    width: 292px;
+    height: 32px;
+    padding: 20px 38px 219px 30px;
+}
+
+.contactsBox {
+    display: flex;
+    position: static;
+    width: 292px;
+    height: 32px;
+    padding: 219px 38px 20px 30px;
+}
+
+.searchBox {
+    display: flex;
+    position: static;
+    width: 292px;
+    height: 32px;
+    padding: 20px 38px 30px 30px;
+}
+
+.arrowToRightBox {
+    display: flex;
+    float: right;
+    padding: 9.65px 33.29px 9.65px
+}
+
