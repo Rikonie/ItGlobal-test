@@ -11,7 +11,8 @@
 
 .header {
     display: flex;
-    position: static;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .text {
@@ -25,17 +26,9 @@
     text-align: left;
 }
 
-.languageBox {
+.iconLanguageBox {
     display: flex;
-    position: static;
-    padding: 10px 5.65px 77px 11px;
-}
-
-.iconBoxLanguage {
-    display: flex;
-    position: static;
-    padding: 17px 11px 84px 23px;
-    border-radius: 10px;
+    padding: 17px 11px 0 23px;
 }
 
 .iconLanguage {
@@ -44,84 +37,84 @@
     height: 18px;
 }
 
-.closeMenuBox {
+.languageBox {
     display: flex;
-    float: right;
-    padding: 15.47px 15.47px
-}
-
-.closeMenuIcon {
-    width: 19.06px;
-    height: 19.06px;
+    padding: 10px 6px 0 0;
 }
 
 .arrowToDownBox {
     display: flex;
-    position: static;
-    padding: 22.65px 227.12px 89.29px 5.65px;
+    padding: 23px 0 0 0;
 }
 
 .arrowToDownIcon {
-    width: 12.71px;
-    height: 7.06px;
-}
-
-.arrowToRightIcon {
-    width: 7.06px;
-    height: 12.71px;
-}
-
-.servicesBox {
-    display: flex;
-    position: static;
-    width: 292px;
-    height: 32px;
-    padding: 77px 38px 20px 30px;
-}
-
-.managerBox {
-    display: flex;
-    position: static;
-    width: 292px;
-    height: 32px;
-    padding: 0 38px 20px 30px;
-}
-
-.telecomBox {
-    display: flex;
-    position: static;
-    width: 292px;
-    height: 32px;
-    padding: 20px 38px 20px 30px;
-}
-
-.aboutUsBox {
-    display: flex;
-    position: static;
-    width: 292px;
-    height: 32px;
-    padding: 20px 38px 219px 30px;
-}
-
-.contactsBox {
-    display: flex;
-    position: static;
-    width: 292px;
-    height: 32px;
-    padding: 219px 38px 20px 30px;
-}
-
-.searchBox {
-    display: flex;
-    position: static;
-    width: 292px;
-    height: 32px;
-    padding: 20px 38px 30px 30px;
+    width: 13px;
+    height: 7px;
 }
 
 .arrowToRightBox {
     display: flex;
-    float: right;
-    padding: 9.65px 33.29px 9.65px
+    padding: 10px 0 10px 0;
 }
 
+.arrowToRightIcon {
+    width: 7px;
+    height: 13px;
+    padding: 0 33px 0 0;
+}
+
+.closeMenuBox {
+    display: flex;
+    padding: 16px 16px 0 0;
+}
+
+.closeMenuIcon {
+    width: 19px;
+    height: 19px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 77px 0 0 0;
+}
+
+.servicesBox {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 38px 10px 30px ;
+}
+
+.boxInHeader {
+    display: flex;
+}
+
+.itemMenuBox {
+    display: flex;
+    padding: 0 33px 20px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contentItemMenuBox {
+    display: flex;
+    padding: 0 0 0 30px;
+}
+
+.footerItemBox {
+    display: flex;
+    padding: 0 0 20px 0;
+}
+
+.modalWindowContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}

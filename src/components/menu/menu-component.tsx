@@ -14,10 +14,10 @@ import arrowToRight from "../../assets/images/arrowToRight.png"
 
 
 class MenuComponentProps {
-    close?: ()=> void;
+    close?: () => void;
 }
 
-export const MenuComponent: React.FC<MenuComponentProps> = ({close}) =>{
+export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
     const [languageVisible, setLanguageVisible] = useState<boolean>(false);
     const [servicesVisible, setServicesVisible] = useState<boolean>(false);
     const [mangerVisible, setManagerVisible] = useState<boolean>(false);
@@ -72,77 +72,60 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) =>{
 
     return (
         <div className={styles['modal-window']}>
-            <div className={styles.header}>
-                <div className={styles.iconBoxLanguage}>
-                    <img src={ru} className={styles.iconLanguage}/>
-                </div>
-                <div className={styles.languageBox}>
-                    <div onClick={openLanguage} className={styles.text}>RU</div>
-                </div>
-                <div className={styles.arrowToDownBox}>
-                    <img src={arrowToDown} className={styles.arrowToDownIcon}/>
-                </div>
-                <div onClick={close} className={styles.closeMenuBox}>
-                    <img src={cross} className={styles.closeMenuIcon}/>
-                </div>
-            </div>
-            <div>
-                <div className={styles.servicesBox}>
-                    <div>
-                        <div onClick={openServices} className={styles.text}>Services</div>
-                    </div>
-                    <div className={styles.arrowToRightBox}>
-                        <img src={arrowToRight} className={styles.arrowToRightIcon}/>
-                    </div>
-                </div>
+            <div className={styles.modalWindowContent}>
                 <div>
-                    <div className={styles.managerBox}>
-                        <div onClick={openManager} className={styles.text}>Managed IT</div>
-                    </div>
-                    <div>
-                        <img src={arrowToRight} className={styles.arrowToRightIcon}/>
-                    </div>
-                </div>
-                <div>
-                    <div className={styles.telecomBox}>
-                        <div onClick={openTelecom} className={styles.text}>Telecom Solutions</div>
-                    </div>
-                    <div>
-                        <img src={arrowToRight} className={styles.arrowToRightIcon}/>
-                    </div>
-                </div>
-                <div>
-                    <div className={styles.aboutUsBox}>
-                        <div onClick={openAboutUs} className={styles.text}>About Us</div>
-                    </div>
-                    <div>
-                        <img src={arrowToRight} className={styles.arrowToRightIcon}/>
-                    </div>
-                </div>
-                <div>
-                    <div className={styles.contactsBox}>
-                        <div onClick={openContacts} className={styles.text}>Контакты</div>
-                    </div>
-                    <div>
-                        <img src={arrowToRight} className={styles.arrowToRightIcon}/>
-                    </div>
-                </div>
-                    <div>
-                        <div className={styles.searchBox}>
-                            <div onClick={openSearch} className={styles.text}>Поиск</div>
+                    <div className={styles.header}>
+                        <div className={styles.boxInHeader}>
+                            <div className={styles.iconLanguageBox}>
+                                <img src={ru} className={styles.iconLanguage}/>
+                            </div>
+                            <div className={styles.languageBox}>
+                                <div onClick={openLanguage} className={styles.text}>Ru</div>
+                            </div>
+                            <div className={styles.arrowToDownBox}>
+                                <img src={arrowToDown} className={styles.arrowToDownIcon}/>
+                            </div>
                         </div>
-                        <div>
-                            <img src={arrowToRight} className={styles.arrowToRightIcon}/>
+                        <div onClick={close} className={styles.closeMenuBox}>
+                            <img src={cross} className={styles.closeMenuIcon}/>
                         </div>
                     </div>
-            {languageVisible?<LanguageComponent close={closeLanguage}/>:null}
-            {servicesVisible?<ServicesComponent close={closeServices}/>:null}
-            {mangerVisible?<ManagerComponent close={closeManager}/>:null}
-            {telecomVisible?<TelecomComponent close={closeTelecom}/>:null}
-            {aboutUsVisible?<AboutUsComponent close={closeAboutUs}/>:null}
-            {contactsVisible?<ContactsComponent close={closeContacts}/>:null}
-            {searchVisible?<SearchComponent close={closeSearch}/>:null}
+                    <div className={styles.body}>
+                        {['Services', 'Managed IT', 'Telecom Solutions', 'About Us'].map((i) => {
+                                return (
+                                    <div className={styles.itemMenuBox}>
+                                        <div className={styles.contentItemMenuBox}>
+                                            <div>
+                                                <div onClick={openServices} className={styles.text}>{i}</div>
+                                            </div>
+                                        </div>
+                                        <div className={styles.arrowToRightBox}>
+                                            <img src={arrowToRight} className={styles.arrowToRightIcon}/>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        )}
+                    </div>
+                </div>
+                <div className={styles.footer}>
+                    {['Контакты', 'Поиск'].map((s) => {
+                            return (
+                                <div className={styles.footerItemBox}>
+                                    <div onClick={openContacts} className={styles.text}>{s}</div>
+                                </div>
+                            )
+                        }
+                    )}
+                </div>
             </div>
+            {languageVisible ? <LanguageComponent close={closeLanguage}/> : null}
+            {servicesVisible ? <ServicesComponent close={closeServices}/> : null}
+            {mangerVisible ? <ManagerComponent close={closeManager}/> : null}
+            {telecomVisible ? <TelecomComponent close={closeTelecom}/> : null}
+            {aboutUsVisible ? <AboutUsComponent close={closeAboutUs}/> : null}
+            {contactsVisible ? <ContactsComponent close={closeContacts}/> : null}
+            {searchVisible ? <SearchComponent close={closeSearch}/> : null}
         </div>
     )
 };
