@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-class ManagerComponentProps {
-    close?: ()=> void;
+interface ManagerComponentProps {
+    close: ()=> void;
 }
 
 export const ManagerComponent: React.FC<ManagerComponentProps> = ({close}) =>{

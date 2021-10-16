@@ -1,7 +1,7 @@
 import React from 'react';
 
-class InformationSecurityComponentProps {
-    close?: ()=> void;
+interface InformationSecurityComponentProps {
+    close: ()=> void;
 }
 
 export const InformationSecurityComponent: React.FC<InformationSecurityComponentProps> = ({close}) =>{

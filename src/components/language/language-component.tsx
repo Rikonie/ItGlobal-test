@@ -1,7 +1,7 @@
 import React from 'react';
 
-class LanguageComponentProps {
-    close?: ()=> void;
+interface LanguageComponentProps {
+    close: ()=> void;
 }
 
 export const LanguageComponent: React.FC<LanguageComponentProps> = ({close}) =>{

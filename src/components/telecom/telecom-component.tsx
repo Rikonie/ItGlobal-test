@@ -1,7 +1,7 @@
 import React from 'react';
 
-class TelecomComponentProps {
-    close?: ()=> void;
+interface TelecomComponentProps {
+    close: ()=> void;
 }
 
 export const TelecomComponent: React.FC<TelecomComponentProps> = ({close}) =>{

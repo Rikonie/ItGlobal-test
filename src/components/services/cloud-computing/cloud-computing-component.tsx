@@ -1,7 +1,7 @@
 import React from 'react';
 
-class CloudComputingComponentProps {
-    close?: ()=> void;
+interface CloudComputingComponentProps {
+    close: ()=> void;
 }
 
 export const CloudComputingComponent: React.FC<CloudComputingComponentProps> = ({close}) =>{

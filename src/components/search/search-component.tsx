@@ -1,7 +1,7 @@
 import React from 'react';
 
-class SearchComponentProps {
-    close?: ()=> void;
+interface SearchComponentProps {
+    close: ()=> void;
 }
 
 export const SearchComponent: React.FC<SearchComponentProps> = ({close}) =>{

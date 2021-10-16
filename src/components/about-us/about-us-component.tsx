@@ -1,9 +1,7 @@
 import React from 'react';
 
-
-
-class AboutUsComponentProps {
-    close?: ()=> void;
+interface AboutUsComponentProps {
+    close: ()=> void;
 }
 
 export const AboutUsComponent: React.FC<AboutUsComponentProps> = ({close}) =>{

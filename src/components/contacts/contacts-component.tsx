@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-class ContactsComponentProps {
-    close?: ()=> void;
+interface ContactsComponentProps {
+    close: ()=> void;
 }
 
 export const ContactsComponent: React.FC<ContactsComponentProps> = ({close}) =>{

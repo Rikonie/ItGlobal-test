@@ -1,7 +1,7 @@
 import React from 'react';
 
-class DedicatedServersComponentProps {
-    close?: ()=> void;
+interface DedicatedServersComponentProps {
+    close: ()=> void;
 }
 
 export const DedicatedServersComponent: React.FC<DedicatedServersComponentProps> = ({close}) =>{

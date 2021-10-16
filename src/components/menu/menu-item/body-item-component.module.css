@@ -1,0 +1,33 @@
+.itemMenuBox {
+    display: flex;
+    padding: 0 33px 20px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contentItemMenuBox {
+    display: flex;
+    padding: 0 0 0 30px;
+}
+
+.text {
+    color: #151617;
+    font-family: 'Golos Text';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.arrowToRightBox {
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+.arrowToRightIcon {
+    width: 7px;
+    height: 13px;
+    padding: 0 33px 0 0;
+}

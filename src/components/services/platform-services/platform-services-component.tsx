@@ -1,7 +1,7 @@
 import React from 'react';
 
-class PlatformServicesComponentProps {
-    close?: ()=> void;
+interface PlatformServicesComponentProps {
+    close: ()=> void;
 }
 
 export const PlatformServicesComponent: React.FC<PlatformServicesComponentProps> = ({close}) =>{
