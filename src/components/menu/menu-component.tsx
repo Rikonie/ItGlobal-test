@@ -3,6 +3,9 @@ import {SubmenuComponent} from "../services/submenu-component";
 import styles from "./menu-component.module.css";
 import {MenuItemComponent} from "./menu-item/menu-item-component";
 import {HeaderComponent} from "./menu-item/header-component";
+import {SubmenuItemComponent} from "./menu-item/submenu-item-component";
+import {bodyItem, footerItem} from "../../classes/menu-item";
+import {submenuItem} from "../../classes/submenu-item";
 
 
 interface MenuComponentProps {
@@ -13,21 +16,13 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
     const [activeMenu, setActiveMenu] = useState<number>(1);
     const [submenuContent, setSubmenuContent] = useState<any | undefined>(1);
 
-    const bodyItem = [
-        {title: 'Services', subItems: ['Облачные вычисления',
-                'Выделенные серверы', 'Платформенные сервисы',
-                'Информационная безопасность']
-        },
-        {title: 'Managed IT', subItems: ['Добрый день, Вы попали на страницу Managed IT']},
-        {title: 'Telecom Solutions', subItems: ['Добрый день, Вы попали на страницу Telecom Solutions']},
-        {title: 'About Us', subItems: ['Добрый день, Вы попали на страницуAbout Us']}];
-
-    const footerItem = [{title: 'Контакты', subItems: ['Добрый день, Вы попали на страницу Контакты']},
-        {title: 'Поиск', subItems: ['Добрый день, Вы попали на страницу Поиск']}];
-
     const MenuComponentFunc = (i: any) => {
         setActiveMenu(2);
         setSubmenuContent(i);
+    };
+
+    const openSubmenu = ()=> {
+        setActiveMenu(3)
     };
 
     const getActiveMenu = (activeMenu: number) => {
@@ -40,7 +35,13 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
                 return (
                     <SubmenuComponent data={submenuContent} close={() => {
                         setActiveMenu(1);
-                    }}/>
+                    }} open={openSubmenu}/>
+                );
+            case 3:
+                return (
+                  <SubmenuItemComponent data={submenuItem} close={() => {
+                      setActiveMenu(2)
+                  }}/>
                 );
             default:
                 return (
