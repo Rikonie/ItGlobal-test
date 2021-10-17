@@ -4,9 +4,7 @@ import styles from "./menu-component.module.css";
 import {MenuItemComponent} from "./menu-item/menu-item-component";
 import {HeaderComponent} from "./menu-item/header-component";
 import {SubmenuItemComponent} from "./menu-item/submenu-item-component";
-import {bodyItem, footerItem} from "../../classes/menu-item";
-import {submenuItem} from "../../classes/submenu-item";
-
+import {bodyItem, footerItem, MenuItem, SubmenuItem} from "../../classes/menu-item";
 
 interface MenuComponentProps {
     close: () => void;
@@ -14,15 +12,18 @@ interface MenuComponentProps {
 
 export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
     const [activeMenu, setActiveMenu] = useState<number>(1);
-    const [submenuContent, setSubmenuContent] = useState<any | undefined>(1);
+    const [submenuContent, setSubmenuContent] = useState<MenuItem | undefined>(undefined);
+    const [submenuItemContent, setSubMenuItemContent] = useState<SubmenuItem | undefined>(undefined);
 
     const MenuComponentFunc = (i: any) => {
         setActiveMenu(2);
         setSubmenuContent(i);
     };
 
-    const openSubmenu = ()=> {
-        setActiveMenu(3)
+    const openSubmenu = (i:SubmenuItem)=> { // Поставитть тип
+        setActiveMenu(3);
+        setSubMenuItemContent(i);
+        console.log("openSubmenu",i)
     };
 
     const getActiveMenu = (activeMenu: number) => {
@@ -35,11 +36,11 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
                 return (
                     <SubmenuComponent data={submenuContent} close={() => {
                         setActiveMenu(1);
-                    }} open={openSubmenu}/>
+                    }} open={openSubmenu} />
                 );
             case 3:
                 return (
-                  <SubmenuItemComponent data={submenuItem} close={() => {
+                  <SubmenuItemComponent data={submenuItemContent} close={() => {
                       setActiveMenu(2)
                   }}/>
                 );

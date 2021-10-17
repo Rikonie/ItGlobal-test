@@ -2,11 +2,12 @@ import styles from "../menu-component.module.css";
 import {BodyItemComponent} from "./body-item-component";
 import {FooterItemComponent} from "./footer-item-component";
 import React from "react";
+import {MenuItem} from "../../../classes/menu-item";
 
 interface MenuItemComponentProps {
-    dataBody: any;
+    dataBody: MenuItem[];
     call: (i: any)=>void,
-    dataFooter: any;
+    dataFooter: MenuItem[];
 }
 
 export const MenuItemComponent: React.FC<MenuItemComponentProps> = ({dataBody,call, dataFooter}) => {
