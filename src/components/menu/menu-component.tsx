@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {SubmenuComponent} from "../services/submenu-component";
+import {SubmenuComponent} from "./menu-item/submenu-component";
 import styles from "./menu-component.module.css";
 import {MenuItemComponent} from "./menu-item/menu-item-component";
 import {HeaderComponent} from "./menu-item/header-component";
@@ -15,12 +15,12 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
     const [submenuContent, setSubmenuContent] = useState<MenuItem | undefined>(undefined);
     const [submenuItemContent, setSubMenuItemContent] = useState<SubmenuItem | undefined>(undefined);
 
-    const MenuComponentFunc = (i: any) => {
+    const MenuComponentFunc = (i: MenuItem) => {
         setActiveMenu(2);
         setSubmenuContent(i);
     };
 
-    const openSubmenu = (i:SubmenuItem)=> { // Поставитть тип
+    const openSubmenu = (i:SubmenuItem)=> {
         setActiveMenu(3);
         setSubMenuItemContent(i);
         console.log("openSubmenu",i)

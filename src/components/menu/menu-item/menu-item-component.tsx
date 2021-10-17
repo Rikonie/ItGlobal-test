@@ -6,7 +6,7 @@ import {MenuItem} from "../../../classes/menu-item";
 
 interface MenuItemComponentProps {
     dataBody: MenuItem[];
-    call: (i: any)=>void,
+    call: (i: MenuItem)=>void,
     dataFooter: MenuItem[];
 }
 
@@ -16,7 +16,7 @@ export const MenuItemComponent: React.FC<MenuItemComponentProps> = ({dataBody,ca
 
     <div>
         <div className={styles.body}>
-            {dataBody.map((i: any, index: number) => {
+            {dataBody.map((i: MenuItem, index: number) => {
                     return (
                         <BodyItemComponent item={i.title}
                                            open={()=>call(i)} key={index}/>
@@ -25,7 +25,7 @@ export const MenuItemComponent: React.FC<MenuItemComponentProps> = ({dataBody,ca
             )}
         </div>
         <div className={styles.footer}>
-            {dataFooter.map((s: any, index: number) => {
+            {dataFooter.map((s: MenuItem, index: number) => {
                     return (
                         <FooterItemComponent item={s.title} open={()=>call(s)} key={index}/>
                     )

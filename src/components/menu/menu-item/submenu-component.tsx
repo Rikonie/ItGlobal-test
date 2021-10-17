@@ -1,10 +1,10 @@
 import React from 'react';
-import {MenuItem, SubmenuItem} from "../../classes/menu-item";
+import {MenuItem, SubmenuItem} from "../../../classes/menu-item";
 
 interface SubmenuComponentProps {
     close: () => void;
     data: MenuItem | undefined;
-    open: (i: any) => void;
+    open: (i: SubmenuItem) => void;
 }
 
 export const SubmenuComponent: React.FC<SubmenuComponentProps> = ({close, data, open}) => {
