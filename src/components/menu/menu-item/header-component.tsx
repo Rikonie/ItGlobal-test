@@ -4,7 +4,11 @@ import arrowToDown from "../../../assets/images/arrowToDown.png";
 import cross from "../../../assets/images/cross.png";
 import React from "react";
 
-export const HeaderComponent = () => {
+interface HeaderComponentProps {
+    close: ()=> void;
+}
+
+export const HeaderComponent:React.FC<HeaderComponentProps>= ({close}) => {
 return (
     <div>
         <div className={styles.header}>
@@ -20,7 +24,7 @@ return (
                 </div>
             </div>
             <div className={styles.closeMenuBox}>
-                <img src={cross} className={styles.closeMenuIcon} alt={''}/>
+                <img src={cross} className={styles.closeMenuIcon} alt={''} onClick={close}/>
             </div>
         </div>
     </div>

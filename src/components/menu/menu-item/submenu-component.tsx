@@ -1,23 +1,22 @@
 import React from 'react';
-import {MenuItem, SubmenuItem} from "../../../classes/menu-item";
+import {MenuItem} from "../../../classes/menu-item";
 
 interface SubmenuComponentProps {
     close: () => void;
     data: MenuItem | undefined;
-    open: (i: SubmenuItem) => void;
+    open: (i: MenuItem) => void;
 }
 
 export const SubmenuComponent: React.FC<SubmenuComponentProps> = ({close, data, open}) => {
 
     return (
         <div>
-            <div>{data?.title}</div>
-            {(data?.subItems)?.map((i: SubmenuItem, index: number) => {
+            <div onClick={close}>{data?.title}</div>
+            {(data?.subMenuItems)?.map((i: MenuItem, index: number) => {
                 return (
-                    <div key={index} onClick={i.information && i.information.length > 0 ? () => open(i): ()=>{}}>{i.title}</div>
+                    <div key={index} onClick={i.subMenuItems && i.subMenuItems.length > 0 ? () => open(i): ()=>{}}>{i.title}</div>
                 )
             })}
-            <button onClick={close}>Закрыть</button>
         </div>
     )
 };

@@ -4,7 +4,7 @@ import styles from "./menu-component.module.css";
 import {MenuItemComponent} from "./menu-item/menu-item-component";
 import {HeaderComponent} from "./menu-item/header-component";
 import {SubmenuItemComponent} from "./menu-item/submenu-item-component";
-import {bodyItem, footerItem, MenuItem, SubmenuItem} from "../../classes/menu-item";
+import {bodyItem, footerItem, MenuItem} from "../../classes/menu-item";
 
 interface MenuComponentProps {
     close: () => void;
@@ -13,14 +13,14 @@ interface MenuComponentProps {
 export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
     const [activeMenu, setActiveMenu] = useState<number>(1);
     const [submenuContent, setSubmenuContent] = useState<MenuItem | undefined>(undefined);
-    const [submenuItemContent, setSubMenuItemContent] = useState<SubmenuItem | undefined>(undefined);
+    const [submenuItemContent, setSubMenuItemContent] = useState<MenuItem | undefined>(undefined);
 
     const MenuComponentFunc = (i: MenuItem) => {
         setActiveMenu(2);
         setSubmenuContent(i);
     };
 
-    const openSubmenu = (i:SubmenuItem)=> {
+    const openSubmenu = (i:MenuItem)=> {
         setActiveMenu(3);
         setSubMenuItemContent(i);
         console.log("openSubmenu",i)
@@ -55,7 +55,7 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
         <div className={styles['modal-window']}>
             <div className={styles.modalWindowContent}>
                 <div>
-                    <HeaderComponent/>
+                    <HeaderComponent close={close}/>
                 </div>
                 <div>
                     {getActiveMenu(activeMenu)}
