@@ -15,6 +15,15 @@ return (
                 <div className={styles.boxLanguage}>
                     <img src={ru} className={styles.iconLanguage} alt={''}/>
                     <div className={styles.text}>Ru</div>
+                    <div className={styles.a}>
+                        <div className={styles.countryText}>Страна</div>
+                        <div className={styles.languageText}>United States</div>
+                        <div className={styles.languageText}>Netherlands</div>
+                        <div className={styles.languageText}>Беларусь</div>
+                        <div className={styles.languageText}>Россия</div>
+                        <div className={styles.languageText}>Казахстан</div>
+                        <div className={styles.languageText}>Türkiye</div>
+                    </div>
                     <img src={arrowToDown} className={styles.arrowToDownIcon} alt={''}/>
                 </div>
                 <img src={cross} className={styles.closeMenuIcon} alt={''} onClick={close}/>

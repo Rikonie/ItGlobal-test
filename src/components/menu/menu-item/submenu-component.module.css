@@ -15,6 +15,11 @@
     width: 100%;
     align-items: center;
     margin: 58px 36px 41px 12px;
+    cursor: pointer;
+}
+
+.headerSubmenu:hover {
+    background-color: lightgray;
 }
 
 .arrowIconToLeft {
@@ -35,6 +40,11 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    cursor: pointer;
+}
+
+.stringBox:hover {
+    background-color: lightgray;
 }
 
 .textString {
@@ -51,3 +61,10 @@
     height: 13px;
     width: 7px;
 }
+.stringBoxSecond {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+

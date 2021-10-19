@@ -7,6 +7,7 @@ interface LanguageComponentProps {
 export const LanguageComponent: React.FC<LanguageComponentProps> = ({close}) =>{
     return (
         <div>
+            <div></div>
             <div>United States</div>
             <div>Netherlands</div>
             <div>Беларусь</div>

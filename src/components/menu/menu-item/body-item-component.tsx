@@ -11,8 +11,8 @@ export const BodyItemComponent: React.FC<BodyItemComponentProps> = ({item, open}
 
     return (
         <div className={styles.itemMenuBox}>
-            <div className={styles.contentItemMenuBox}>
-                <div onClick={open} className={styles.text}>{item}</div>
+            <div className={styles.contentItemMenuBox} onClick={open}>
+                <div className={styles.text}>{item}</div>
                 <img src={arrowToRight} className={styles.arrowToRightIcon} alt={''}/>
             </div>
         </div>
