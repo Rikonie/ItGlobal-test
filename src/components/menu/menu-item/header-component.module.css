@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    margin: 10px 10px 0 20px;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.iconLanguage {
+    border-radius: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.arrowToDownIcon {
+    width: 13px;
+    height: 7px;
+}
+
+.closeMenuIcon {
+    width: 19px;
+    height: 19px;
+}
+
+.text {
+    color: #151617;
+    font-family: 'Golos Text';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-right: 6px;
+    padding-left: 11px;
+}
+
+.boxLanguage {
+    display: flex;
+    align-items: center;
+}

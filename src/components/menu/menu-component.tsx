@@ -23,7 +23,6 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
     const openSubmenu = (i:MenuItem)=> {
         setActiveMenu(3);
         setSubMenuItemContent(i);
-        console.log("openSubmenu",i)
     };
 
     const getActiveMenu = (activeMenu: number) => {
@@ -53,14 +52,10 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
 
     return (
         <div className={styles['modal-window']}>
-            <div className={styles.modalWindowContent}>
-                <div>
                     <HeaderComponent close={close}/>
-                </div>
-                <div>
+                <div className={styles.itemBox}>
                     {getActiveMenu(activeMenu)}
                 </div>
-            </div>
         </div>
     )
 };

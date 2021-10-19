@@ -7,87 +7,13 @@
     height: 100%;
     background-color: #E5E5E5;
     z-index: 4444;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.text {
-    color: #151617;
-    font-family: 'Golos Text';
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: 0;
-    text-align: left;
-}
-
-.iconLanguageBox {
-    display: flex;
-    padding: 17px 11px 0 23px;
-}
-
-.iconLanguage {
-    border-radius: 10px;
-    width: 18px;
-    height: 18px;
-}
-
-.languageBox {
-    display: flex;
-    padding: 10px 6px 0 0;
-}
-
-.arrowToDownBox {
-    display: flex;
-    padding: 23px 0 0 0;
-}
-
-.arrowToDownIcon {
-    width: 13px;
-    height: 7px;
-}
-
-.closeMenuBox {
-    display: flex;
-    padding: 16px 16px 0 0;
-}
-
-.closeMenuIcon {
-    width: 19px;
-    height: 19px;
-}
-
-.body {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 77px 0 0 0;
 }
 
-.servicesBox {
-    display: flex;
-}
-
-.footer {
+.itemBox {
     display: flex;
     flex-direction: column;
-    padding: 0 38px 10px 30px ;
-}
-
-.boxInHeader {
-    display: flex;
-}
-
-
-.modalWindowContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     height: 100%;
 }
