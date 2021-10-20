@@ -1,0 +1,20 @@
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 77px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 38px 10px 30px ;
+}
+
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}

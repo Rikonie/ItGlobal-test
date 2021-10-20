@@ -1,0 +1,33 @@
+.itemMenuBox {
+    display: flex;
+    margin: 0 33px 20px 30px;
+}
+
+.contentItemMenuBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text {
+    color: #151617;
+    font-family: 'Golos Text';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+
+.arrowToRightIcon {
+    width: 7px;
+    height: 13px;
+}
+
+.contentItemMenuBox:hover {
+    background-color: lightgray;
+}

@@ -1,0 +1,20 @@
+.footerItemBox {
+    display: flex;
+    padding: 0 0 20px 0;
+}
+
+.text:hover {
+    background-color: lightgray;
+}
+
+.text {
+    color: #151617;
+    font-family: 'Golos Text';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    cursor: pointer;
+}

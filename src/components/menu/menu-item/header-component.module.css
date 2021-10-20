@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    margin: 10px 10px 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconLanguage {
+    border-radius: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.arrowToDownIcon {
+    width: 13px;
+    height: 7px;
+}
+
+.closeMenuIcon {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.text {
+    color: #151617;
+    font-family: 'Golos Text';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-right: 6px;
+    padding-left: 11px;
+}
+
+.boxLanguage {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boxLanguage:hover {
+    background-color: lightgray;
+}
+
+.closeMenuIcon:hover {
+    background-color: lightgray;
+}
+
+.a {
+    display: none;
+}
+
+.boxLanguage:hover > .a {
+    display: flex;
+    height: 292px;
+    width: 180px;
+    position: fixed;
+    top: 42px;
+    left: 12px;
+    z-index: 5555;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 2px;
+    box-shadow: 0 6px 10px rgba(116, 137, 155, 0.06),
+    0 1px 18px rgba(116, 137, 155, 0.04),
+    0 3px 5px rgba(116, 137, 155, 0.08);
+    align-items: center;
+}
+
+.countryText {
+    font-family: 'Golos Text';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.languageText {
+    font-family: 'Golos Text';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+.languageTextLast {
+    font-family: 'Golos Text';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 6px;
+}
