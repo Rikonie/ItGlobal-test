@@ -24,7 +24,7 @@ export enum ItemType {
 export const bodyItem: MenuItem[] = [
     {
         title: 'Services', type: ItemType.MenuItem, subMenuItems: [{
-            title: 'Облачные вычисления', type: ItemType.SubmenuItem, subMenuItems: [{
+            title: 'Cloud computing', type: ItemType.SubmenuItem, subMenuItems: [{
                 title: 'Cloud consulting',
                 type: ItemType.SubmenuItemContent,
                 description: 'Relational database services for MySQL, PostgreSQL, and SQL server.'
@@ -47,31 +47,31 @@ export const bodyItem: MenuItem[] = [
             }]
         },
             {
-                title: 'Выделенные серверы',
+                title: 'Dedicated Servers',
                 type: ItemType.SubmenuItem,
                 subMenuItems:
                     [{
-                        title: 'Это выделенные серверы',
+                        title: 'This is Dedicated Servers',
                         type: ItemType.SubmenuItemContent,
-                        description: 'Это информация о выделенных серверах'
+                        description: 'This is information about dedicated servers'
                     }]
             },
             {
-                title: 'Платформенные сервисы',
+                title: 'Platform services',
                 type: ItemType.SubmenuItem,
                 subMenuItems: [{
-                    title: 'Это Платформенные сервисы',
+                    title: 'This is Platform services',
                     type: ItemType.SubmenuItemContent,
                     description: 'Это информация о Платформенные сервисы'
                 }]
             },
             {
-                title: 'Информационная безопасность',
+                title: 'Information Security',
                 type: ItemType.SubmenuItem,
                 subMenuItems: [{
-                    title: 'Это Информационная безопасность',
+                    title: 'This is Information Security',
                     type: ItemType.SubmenuItemContent,
-                    description: 'Это информация о Информационная безопасность'
+                    description: 'This is information about Information Security'
                 }]
             }]
     },
@@ -79,7 +79,7 @@ export const bodyItem: MenuItem[] = [
         title: 'Managed IT',
         type: ItemType.MenuItem,
         subMenuItems: [{
-            title: 'Это Managed IT',
+            title: 'This is Managed IT',
             type: ItemType.SubmenuItem,
             subMenuItems: []
         }]
@@ -88,7 +88,7 @@ export const bodyItem: MenuItem[] = [
         title: 'Telecom Solutions',
         type: ItemType.MenuItem,
         subMenuItems: [{
-            title: 'Это Telecom Solutions',
+            title: 'This is Telecom Solutions',
             type: ItemType.SubmenuItem,
             subMenuItems: []
         }]
@@ -97,26 +97,26 @@ export const bodyItem: MenuItem[] = [
         title: 'About Us',
         type: ItemType.MenuItem,
         subMenuItems: [{
-            title: 'Это About Us',
+            title: 'This is About Us',
             type: ItemType.SubmenuItem,
             subMenuItems: []
         }]
     }];
 
 export const footerItem: MenuItem[] = [{
-    title: 'Контакты',
+    title: 'Contacts',
     type: ItemType.SearchAndContacts,
     subMenuItems: [{
-        title: 'Это Контакты',
+        title: 'This is contacts',
         type: ItemType.SubmenuItem,
         subMenuItems: []
     }]
 },
     {
-        title: 'Поиск',
+        title: 'Search',
         type: ItemType.SearchAndContacts,
         subMenuItems: [{
-            title: 'Это Поиск',
+            title: 'This is search',
             type: ItemType.SubmenuItem,
             subMenuItems: []
         }]

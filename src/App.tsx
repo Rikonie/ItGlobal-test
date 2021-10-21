@@ -3,7 +3,7 @@ import './App.css'
 import {MenuComponent} from "./components/menu/menu-component";
 
 import i18n from "i18next";
-import {useTranslation, initReactI18next} from "react-i18next";
+import {initReactI18next} from "react-i18next";
 import localizationData from "./localization/localization";
 
 i18n.use(initReactI18next)
@@ -12,7 +12,6 @@ i18n.use(initReactI18next)
 
 export function App() {
 
-    const {t} = useTranslation();
     const [menuVisible, setMenuVisible] = useState<boolean>(false);
     const openMenu = () => {
         setMenuVisible(true)
@@ -24,12 +23,10 @@ export function App() {
     return (
 
         <div>
-            {t("Welcome to React")}
+            Добрый день!
             <button onClick={openMenu}>Открыть меню</button>
             {menuVisible ? <MenuComponent close={closeMenu}/> : null}
-            <button onClick={()=>{i18n.changeLanguage('ru')}}>Change to russian</button>
         </div>
     );
-
 }
 

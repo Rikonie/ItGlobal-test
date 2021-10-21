@@ -33,6 +33,7 @@
     text-align: left;
     padding-right: 6px;
     padding-left: 11px;
+    text-transform: capitalize;
 }
 
 .boxLanguage {
@@ -49,11 +50,7 @@
     background-color: lightgray;
 }
 
-.a {
-    display: none;
-}
-
-.boxLanguage:hover > .a {
+.modal {
     display: flex;
     height: 292px;
     width: 180px;
@@ -83,6 +80,7 @@
     width: 100%;
     align-items: center;
     margin-top: 6px;
+    padding-left: 17px;
 }
 
 .languageText {
@@ -97,19 +95,39 @@
     height: 40px;
     width: 100%;
     align-items: center;
+    padding-left: 12px;
 }
 
-.languageTextLast {
-    font-family: 'Golos Text';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0;
-    text-align: left;
+.iconInModal {
+    border-radius: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.modalContent {
+     display: flex;
+     align-items: center;
+     height: 40px;
+     width: 163px;
+     padding-left: 17px;
+    cursor: pointer;
+ }
+
+.modalContent:hover {
+    background-color: lightgray;
+}
+
+.checkIcon {
+    padding-right: 16px;
+    width: 11px;
+    height: 7px;
+}
+
+.modalContentChange {
     display: flex;
-    height: 40px;
-    width: 100%;
     align-items: center;
-    margin-bottom: 6px;
+    height: 40px;
+    width: 163px;
+    padding-left: 17px;
+    background-color: lightgray;
 }

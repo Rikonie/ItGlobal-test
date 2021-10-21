@@ -1,8 +1,9 @@
 import React from 'react';
-import {MenuItem} from "../../../classes/menu-item";
-import arrowToRight from "../../../assets/images/arrowToRight.png";
-import arrowToLeft from "../../../assets/images/arrowToLeft.png";
+import {MenuItem} from "../../classes/menu-item";
+import arrowToRight from "../../assets/images/arrowToRight.png";
+import arrowToLeft from "../../assets/images/arrowToLeft.png";
 import styles from "./submenu-component.module.css";
+import {useTranslation} from "react-i18next";
 
 interface SubmenuComponentProps {
     close: () => void;
@@ -11,7 +12,7 @@ interface SubmenuComponentProps {
 }
 
 export const SubmenuComponent: React.FC<SubmenuComponentProps> = ({close, data, open}) => {
-
+    const {t} = useTranslation();
     return (
         <>
             <div onClick={close} className={styles.headerSubmenu}>
@@ -23,10 +24,10 @@ export const SubmenuComponent: React.FC<SubmenuComponentProps> = ({close, data, 
                     <div className={styles.contentBox} key={index}>
                         {(i.subMenuItems && i.subMenuItems.length > 0) ? <div className={styles.stringBox}
                                                                               onClick={() => open(i)}>
-                            <div className={styles.textString}>{i.title}</div>
+                            <div className={styles.textString}>{t(i.title)}</div>
                             <img src={arrowToRight} alt={''} className={styles.arrowIconToRight}/>
                         </div> : <div className={styles.stringBoxSecond}>
-                            <div className={styles.textString}>{i.title}</div>
+                            <div className={styles.textString}>{t(i.title)}</div>
                         </div>}
                     </div>
                 )

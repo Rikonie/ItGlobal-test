@@ -1,8 +1,8 @@
 import styles from "./menu-item-component.module.css";
-import {BodyItemComponent} from "./body-item-component";
-import {FooterItemComponent} from "./footer-item-component";
+import {BodyItemComponent} from "../body/body-item-component";
+import {FooterItemComponent} from "../footer/footer-item-component";
 import React from "react";
-import {MenuItem} from "../../../classes/menu-item";
+import {MenuItem} from "../../classes/menu-item";
 
 interface MenuItemComponentProps {
     dataBody: MenuItem [];

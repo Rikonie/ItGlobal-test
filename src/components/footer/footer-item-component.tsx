@@ -1,5 +1,6 @@
 import styles from "./footer-item-component.module.css";
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 interface FooterItemComponentProps {
     item: string;
@@ -7,10 +8,10 @@ interface FooterItemComponentProps {
 }
 
 export const FooterItemComponent: React.FC<FooterItemComponentProps> = ({item, open}) => {
-
+    const {t} = useTranslation();
     return (
         <div className={styles.footerItemBox}>
-            <div onClick={open} className={styles.text}>{item}</div>
+            <div onClick={open} className={styles.text}>{t(item)}</div>
         </div>
     )
 };

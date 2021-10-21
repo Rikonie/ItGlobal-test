@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import {SubmenuComponent} from "./menu-item/submenu-component";
+import {SubmenuComponent} from "../submenu/submenu-component";
 import styles from "./menu-component.module.css";
-import {MenuItemComponent} from "./menu-item/menu-item-component";
-import {HeaderComponent} from "./menu-item/header-component";
-import {SubmenuItemComponent} from "./menu-item/submenu-item-component";
+import {MenuItemComponent} from "../menu-item/menu-item-component";
+import {HeaderComponent} from "../header/header-component";
+import {SubmenuItemComponent} from "../submenu-item/submenu-item-component";
 import {bodyItem, footerItem, MenuItem} from "../../classes/menu-item";
 
 interface MenuComponentProps {

@@ -76,7 +76,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-image: url('../../../assets/images/scroll.png');
+    background-image: url('../../assets/images/scroll.png');
     border-radius: 2px;
 }
 
