@@ -9,6 +9,8 @@
     z-index: 4444;
     display: flex;
     flex-direction: column;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 .itemBox {
@@ -16,4 +18,16 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0;
+        width: 100%;
+    }
 }

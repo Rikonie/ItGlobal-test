@@ -10,8 +10,8 @@ interface FooterItemComponentProps {
 export const FooterItemComponent: React.FC<FooterItemComponentProps> = ({item, open}) => {
     const {t} = useTranslation();
     return (
-        <div className={styles.footerItemBox}>
-            <div onClick={open} className={styles.text}>{t(item)}</div>
+        <div className={styles.footerItemBox} onClick={open}>
+            <div className={styles.text}>{t(item)}</div>
         </div>
     )
 };

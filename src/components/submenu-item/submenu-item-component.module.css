@@ -12,10 +12,12 @@
 
 .headerSubmenu {
     display: flex;
-    width: 100%;
     align-items: center;
-    margin: 58px 36px 20px 12px;
+    margin: 58px 30px 20px 9px;
     cursor: pointer;
+    padding: 0 6px 0 3px;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 .headerSubmenu:hover {
@@ -39,6 +41,7 @@
     width: 100%;
     display: flex;
     padding-bottom: 23px;
+
 }
 
 .textTitleContent {
@@ -78,5 +81,17 @@
 ::-webkit-scrollbar-thumb {
     background-image: url('../../assets/images/scroll.png');
     border-radius: 2px;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 9px;
+        width: 100%;
+    }
 }
 

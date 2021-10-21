@@ -65,7 +65,7 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({close}) => {
 
         <div>
             <div className={styles.header}>
-                <div className={styles.boxLanguage} onClick={()=>openMenu(languageMenuVisible)}>
+                <div className={languageMenuVisible? styles.boxLanguageActive: styles.boxLanguage} onClick={()=>openMenu(languageMenuVisible)}>
                     <img src={iconLanguage(i18n.language)} className={styles.iconLanguage} alt={''}/>
                     <div className={styles.text}>{i18n.language}</div>
                     <img src={arrowToDown} className={styles.arrowToDownIcon} alt={''}/>
