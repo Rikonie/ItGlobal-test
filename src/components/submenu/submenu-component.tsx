@@ -1,7 +1,7 @@
 import React from 'react';
 import {MenuItem} from "../../classes/menu-item";
-import arrowToRight from "../../assets/images/arrowToRight.png";
-import arrowToLeft from "../../assets/images/arrowToLeft.png";
+import arrowToRight from "../../assets/images/arrow-to-right.png";
+import arrowToLeft from "../../assets/images/arrow-to-left.png";
 import styles from "./submenu-component.module.css";
 import {useTranslation} from "react-i18next";
 

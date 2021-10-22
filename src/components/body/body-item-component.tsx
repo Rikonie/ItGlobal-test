@@ -1,5 +1,5 @@
 import styles from "./body-item-component.module.css";
-import arrowToRight from "../../assets/images/arrowToRight.png";
+import arrowToRight from "../../assets/images/arrow-to-right.png";
 import React from "react";
 import {useTranslation} from "react-i18next";
 

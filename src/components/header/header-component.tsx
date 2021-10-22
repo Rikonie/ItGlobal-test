@@ -1,6 +1,6 @@
 import styles from "./header-component.module.css";
 import ru from "../../assets/images/ru.png";
-import arrowToDown from "../../assets/images/arrowToDown.png";
+import arrowToDown from "../../assets/images/arrow-to-down.png";
 import cross from "../../assets/images/cross.png";
 import React, {useState} from "react";
 import usa from "../../assets/images/usa.png";
@@ -8,9 +8,9 @@ import netherlands from "../../assets/images/netherlands.png";
 import belarus from "../../assets/images/belarus.png";
 import kz from "../../assets/images/kz.png";
 import tr from "../../assets/images/tr.png";
-import ruInModal from "../../assets/images/ruInModal.png";
+import ruInModal from "../../assets/images/ru-in-modal.png";
 import i18n from "i18next";
-import checkMark from "../../assets/images/checkMark.png";
+import checkMark from "../../assets/images/check-mark.png";
 
 interface HeaderComponentProps {
     close: () => void;

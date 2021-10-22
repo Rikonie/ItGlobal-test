@@ -51,7 +51,7 @@ export const MenuComponent: React.FC<MenuComponentProps> = ({close}) => {
     };
 
     return (
-        <div className={styles['modal-window']}>
+        <div className={styles.modalWindow}>
                     <HeaderComponent close={close}/>
                 <div className={styles.itemBox}>
                     {getActiveMenu(activeMenu)}

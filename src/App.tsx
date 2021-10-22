@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css'
+
 import {MenuComponent} from "./components/menu/menu-component";
 
 import i18n from "i18next";
@@ -21,7 +21,6 @@ export function App() {
     };
 
     return (
-
         <div>
             Добрый день!
             <button onClick={openMenu}>Открыть меню</button>
